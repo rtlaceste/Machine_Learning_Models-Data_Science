@@ -118,7 +118,7 @@ class absenteeism_model():
             # drop the variables we decide we don't need
             df = df.drop(['Day of the Week','Daily Work Load Average','Distance to Work'],axis=1)
             
-            # we have included this line of code if you want to call the 'preprocessed data'
+            
             self.preprocessed_data = df.copy()
             
             self.data = self.scaler.transform(df)
